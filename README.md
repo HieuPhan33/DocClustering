@@ -175,9 +175,10 @@ Results:
 From the HDBSCAN results, HDBSCAN successfully identifies a group of data points with high density in the upper left region on 2D map. There are two clusters of irregular shapes identified by HDBSCAN. The red clusters are separated on the map which can be explained by the fact that Self-Organizing Map loses some 'configuration information' when mapping 350-dimension data into 2-dimension map. Another reason contributes to the learning process of Self-Organizing Map when there are too many outliers mingling within the potential clusters, and Self-Organizing Map could find the way to merge them together on 2D map.
 
 ### Conclusion
+* Stemming and detecting phrases before feeding documents into Word2Vec model will improve the quality of output vectors since the core information within texts are maintained and conveyed effectively in the numerical vectors.
 
-The unstructured texts from DrLounge forums are messy possibly because patients sometimes describe their symptoms in vague, or there are a lot of infrequent medical terms which are supposed to contain important information, but inversely, introduce outliers to our supervised learning process.
+* The unstructured texts from DrLounge forums are difficult to be clustered possibly because patients sometimes describe their symptoms in vague, or there are a lot of infrequent medical terms which are supposed to contain important information, but inversely, introduce outliers to our unsupervised learning process. As a suggestion, we should use our domain knowledge to detect special medical terms and replace them to increase the word frequencies while maintaining the original meanings as much as possible.
 
-HDBSCAN proves most effective in our case and successfully identifies two clusters which are intuitively based on the assumptions we made in data exploration phase using Self-Organizing Map.
+* HDBSCAN proves most effective in our case and successfully identifies two clusters which are intuitively based on the assumptions we made in data exploration phase using Self-Organizing Map.
 
-In order to improve the clustering results, we in fact need a larger corpus for the Word Embedding Model which can be difficult to achieve due to privacy issues 
+* In order to improve the clustering results, we in fact need a larger corpus for the Word Embedding Model which can be difficult to achieve due to privacy issues 
