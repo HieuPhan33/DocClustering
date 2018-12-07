@@ -6,6 +6,10 @@ Before applying predictive modeling to a large volume of unstructured text, we n
 
 In order to deal with unstructured text, we need the word embedding model to convert them into numeric vectors
 
+#### INSTALLATION:
+Activate your virtualenv
+pip install -r requirements.txt
+
 ### BUILDING AND EVALUATING WORD EMBEDDING MODEL
 
 1. Prepare Training Dataset:
@@ -138,7 +142,7 @@ The light area indicates the high density of input data points got mapped into o
 
 U-Matrix:
 
-![u_matrix](E:\Program\Working\DocClustering\assets\u_matrix.png)
+![u_matrix](https://github.com/StevePhan97/DocClustering/blob/master/assets/u_matrix.png)
 
 The strong color indicates that the coordinates on 2D map which represent input data points near that location in the input topology are distant from the other coordinates.
 
@@ -148,7 +152,7 @@ At the lower right region of the 2D map, the highly distant group of input data 
 
 With a lot of outliers, random distribution and irregular shape clusters, KMeans cannot perform well on this data. We first plot the graph of the number of clusters k vs the squared error from any points to its centroid and observe the pattern when increasing the number of clusters:
 
-![kmeans_error](E:\Program\Working\DocClustering\result\kmeans_error.png)
+![kmeans_error](https://github.com/StevePhan97/DocClustering/blob/master/assets/kmeans_error.png)
 
 As expected, the 'right' number of clusters k does not exist as the error keeps decreasing monotonically when k increases. We could not observe the 'knee' where the error rate becomes small as k increases, the curve becomes flatten out at some k value. In other words,the best cost-benefit is observed.
 
@@ -166,7 +170,7 @@ python clustering.py
 
 Results:
 
-![umatrix_hdbscan](E:\Program\Working\DocClustering\result\umatrix_hdbscan.png)
+![umatrix_hdbscan](https://github.com/StevePhan97/DocClustering/blob/master/assets/umatrix_hdbscan.png)
 
 From the HDBSCAN results, HDBSCAN successfully identifies a group of data points with high density in the upper left region on 2D map. There are two clusters of irregular shapes identified by HDBSCAN. The red clusters are separated on the map which can be explained by the fact that Self-Organizing Map loses some 'configuration information' when mapping 350-dimension data into 2-dimension map. Another reason contributes to the learning process of Self-Organizing Map when there are too many outliers mingling within the potential clusters, and Self-Organizing Map could find the way to merge them together on 2D map.
 
