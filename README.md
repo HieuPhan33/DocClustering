@@ -132,7 +132,7 @@ Explanation: Self-Organizing Map is a type of ANN which uses a neighborhood func
 
 Heatmap:
 
-![heatmap](E:\Program\Working\DocClustering\assets\heatmap.png)
+![heatmap](https://github.com/StevePhan97/DocClustering/blob/master/assets/heatmap.png)
 
 The light area indicates the high density of input data points got mapped into our 2D Map. As we can see, the data distribution is random. The district of data points with greatest density is located in the upper left region which potentially indicates a separated cluster with an irregular shape.
 
