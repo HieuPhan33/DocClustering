@@ -1,0 +1,9 @@
+category,target,d2v,w2v,glove
+disorder,diabetes,"['hypertension', 'heart_disease', 'diet', 'protein', 'hypothyroidism']","['diabetic', 'hypertension', 'diabete', 'insulin', 'hypothyroidism']","['poor_dentition', 'type', 'hypertension', 'poorly_controlled', 'type_ii']"
+disorder,depression,"['anxiety_and', 'bipolar_disorder', 'panic_attacks', 'depression_and', 'severe']","['disorder', 'insomnia', 'anxiety', 'antidepressants', 'disorders']","['displeasure', 'anxiety', 'irritability', 'panic_attacks', 'tolerance_']"
+disorder,anxiety,"['anxiety_and', 'panic_attacks', 'my_anxiety', 'fear', 'panic_attack']","['panic', 'emotional', 'gad', 'fear', 'depression']","['depression', 'displeasure', 'tolerance_', 'panic_attacks', 'stress']"
+symptom,dyspnea,"['dyspnea_and', 'exertional_dyspnea', 'hemoptysis', 'breathlessness', 'orthopnea']","['hemoptysis', 'orthopnea', 'breathlessness', 'cough', 'substernal']","['paroxysmal_nocturnal', 'orthopnea', 'mild_exertional', 'culminating_in_severe', 'progressive_exertional']"
+symptom,fatigue,"['weakness', 'sore_throat', 'fever', 'shortness_of_breath', 'anemia']","['tiredness', 'lethargy', 'dizziness', 'weakness', 'malaise']","['tiring_easily', 'postdromes', 'physical_tiredness', 'melenaextreme', 'tiredness']"
+symptom,fever,"['fever_and', 'sore_throat', 'fevers', 'fatigue', 'pain']","['fevers', 'nausea', 'temperature', 'vomiting', 'headache']","['chills', 'high_temperature', 'low_grade', 'headache_fatigue', 'chill']"
+drug,opioid,"['midazolam', 'randomised_controlled', 'reuptake_inhibitor', 'for_opioid', 'velban']","['opioids', 'heroin', 'addiction', 'naloxone', 'buprenorphine']","['dependence', 'kornbluth', 'encoding', 'squamous_cell_carcinoma', 'anaphylaxis']"
+drug,aspirin,"['aspirin_and', 'drugs', 'high_doses', 'erythromycin', 'acetaminophen']","['asprin', 'tylenol', 'ibuprofen', 'simvastatin', 'mrn']","['enteric_coated', 'ecasa', 'metoprolol', 'ms_contin', 'ibuprofen']"

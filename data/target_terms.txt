@@ -1,0 +1,8 @@
+disorder,diabetes
+disorder,depression
+disorder,anxiety
+symptom,dyspnea
+symptom,fatigue
+symptom,fever
+drug,opioid
+drug,aspirin

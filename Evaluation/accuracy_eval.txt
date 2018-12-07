@@ -1,0 +1,7 @@
+w2v i2b2 - accuracy  0.6125
+d2v i2b2 - accuracy  0.6
+glove i2b2 - accuracy  0.65
+
+d2v drlounge - accuracy  0.3201149425287356
+w2v drlounge - accuracy  0.5436781609195402
+glove drlounge - accuracy  0.28218390804597704
